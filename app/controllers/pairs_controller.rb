@@ -5,7 +5,7 @@ class PairsController < ApplicationController
 
 	def create
 		Pair.delete_all
-		pair = Pair.new(left: "tie", right: "type", pairType: "Final Consonant Deletion")
+		pair = Pair.new(left: "tie.jpg", right: "type.jpg", pairType: "Final Consonant Deletion")
 		pair.save
 
 		pair1 = Pair.new(left: "arm", right: "farm", pairType: "Initial Consonant Deletion")
