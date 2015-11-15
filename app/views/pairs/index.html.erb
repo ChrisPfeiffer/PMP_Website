@@ -1,0 +1,48 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Puppy Minimal Pairs Speech Therapy App - Examples</title>
+    </head>
+
+    <div class="divide60"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 margin20">
+                <h3 class="heading">Examples</h3>
+                    <p>
+                        Here are some examples of words and pictures used in the app. In the iPad application, you'll be able to hear a correct example of each word, and practice each word interactively with audio and video recording.
+                    </p>                    
+                </div>                
+        </div><!--about intro-->
+        
+        <div class="divide60"></div>
+
+    	<% @pairs.each do |p| %>
+    	<div class="row">
+    		<div class="col-md-12 margin20">
+            	<h3 class="heading"><%=p.pairType%></h3>
+            </div>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-2"></div>
+    		<div class="col-md-3 margin20">
+    			<div class="team-wrap">
+    				<img src=<%=asset_path(p.left)%> class="img-responsive" alt="" align="center">
+    				<h2><%=p.left%></h2>
+    			</div>
+    		</div>
+    		<div class="col-md-2"></div>
+			<div class="col-md-3 margin20">
+    			<div class="team-wrap">
+    				<img src=<%=asset_path(p.right)%> class="img-responsive" alt="" align="center">
+    				<h2><%=p.right%></h2>
+    			</div>
+    		</div>
+    	</div>
+    	<% end %>
+    </div>
+
+
+</html>

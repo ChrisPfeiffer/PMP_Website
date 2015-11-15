@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Puppy Minimal Pairs Speech Therapy App</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	        <div id="header-top" class="hidden-xs">
+            <div class="container">
+                <div class="top-bar">
+                    <div class="pull-left sample-1right">
+                         <a><i class="fa fa-envelope"></i> Any Questions? Mail us: <span class="colored-text">puppyminpairs@gmail.com</span></a>
+                    </div>
+                    <div class="pull-right">
+                        <ul class="list-inline top-social">
+                            <li>Follow us:</li>
+                            <li><a href="https://instagram.com/puppyminimalpairsspeechapp/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/Puppy-Minimal-Pairs-Speech-Therapy-App-446707255519378/?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.pinterest.com/playfulspeech/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div class="navbar navbar-default navbar-static-top yamm sticky" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Puppy Minimal Pairs</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href=<%=url_for :controller=>'puppy_minimal_pairs', :action=>'home'%> class="active">Home</a>                            
+                        </li>
+                        <!--menu home li end here-->
+                        <li class="dropdown">
+                            <a href=<%=url_for :controller=>'puppy_minimal_pairs', :action=>'about'%> class="dropdown-toggle">About</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href=<%=url_for :controller=>'puppy_minimal_pairs', :action=>'team'%> class="dropdown-toggle">Team</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href=<%=url_for :controller=>'puppy_minimal_pairs', :action=>'social'%> data-no-turbolink class="dropdown-toggle">Social</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href=<%=url_for :controller=>'pairs', :action=>'index'%> class="dropdown-toggle">Examples</a>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--container-->
+        </div><!--navbar-default-->
+
+<%= yield %>
+
+</body>
+</html>

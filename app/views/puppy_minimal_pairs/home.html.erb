@@ -1,0 +1,153 @@
+
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>   
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="item item-c-slide active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 text-center slide-text">
+                                <h1 class="animated slideInLeft delay-1">Welcome</h1>
+                                <div class="divide15"></div>
+                                <p class="animated slideInLeft delay-2">Puppy Minimal Pairs is an immersive speech therapy iPad Application</p>
+                                <div class="divide15"></div>
+                                <p class="animated slideInLeft delay-3"><a href="#" class="btn btn-lg btn-primary"> About</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--item-->
+                <div class="item item-c-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 text-center slide-text">
+                                <h1 class="animated slideInLeft delay-1">Created By an SLP</h1>
+                                <div class="divide15"></div>
+                                <p class="animated slideInLeft delay-2">For SLP's and Parents</p>
+                                <div class="divide15"></div>
+                                <p class="animated slideInLeft delay-3"><a href=<%=url_for :controller=>'puppy_minimal_pairs', :action=>'team'%> class="btn btn-lg btn-primary"> Meet the Team</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--item-->
+                <div class="item item-c-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 text-center slide-text">
+                                <p class="animated slideInLeft delay-1">Each Section Has Over 25</p>
+                                <div class="divide15"></div>
+                                <h1 class="animated slideInLeft delay-2">Minimal Pairs</h1>
+                                <div class="divide15"></div>
+                                <p class="animated slideInLeft delay-3"><a href="#" class="btn btn-lg btn-primary"> Examples</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--item-->
+            </div><!--carousel inner-->
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev" style="width: 50px; top:45%;">
+                <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next" style="width: 50px; top:45%;">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </div><!--carousel slider-->
+
+        <div class="divide70"></div>
+
+                <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="center-heading">
+                        <h2>Welcome to Puppy Minimal Pairs</h2>
+                        <span class="center-line"></span>
+                        <p>
+                            Meet Jensie, a playful black lab puppy, who will help children practice minimal pair contrasts! This app is perfect for children with phonological processing disorders. Children can work to reduce the processes of initial consonant deletion, final consonant deletion, stopping, cluster reduction, syllable reduction, fronting, and gliding. They will achieve this while looking at fun and engaging pictures! Students can also take video and audio recordings of themselves saying each word and compare to a provided recording of each word for immediate feedback. All of this makes for an immersive and effective educational experience! Try initial consonant deletion for free! All other sections can be purchased one at a time based on your needs, or all at once up front for a discount!
+                        </p>
+                        <img src=<%=asset_path('app-store.png')%> alt="" class="img-responsive wow animated fadeIn" data-wow-duration="700ms" data-wow-delay="100ms" style="display: block;margin: 40px auto">
+                    </div>
+                </div>                   
+            </div>
+            <div class="row special-feature">
+                <div class="col-md-3 col-sm-6 margin20">
+                    <div class="s-feature-box text-center wow animated fadeIn" data-wow-duration="700ms" data-wow-delay="200ms">
+                        <div class="mask-top">
+                            <!-- Icon -->
+                            <i class="fa fa-heart-o"></i>
+                            <!-- Title -->
+                            <h4>Made with love</h4>
+                        </div>
+                        <div class="mask-bottom">
+                            <!-- Icon -->
+                            <i class="fa fa-heart-o"></i>
+                            <!-- Title -->
+                            <h4>Made with love</h4>
+                            <!-- Text -->
+                            <p> Puppy Minimal Pairs was fueled by a passion for learning and making something special. We feel
+                                the weekends filled with canine photography and late night coding were totally worth it!
+                            </p>
+                        </div>
+                    </div>
+
+                </div><!--services col-->
+                <div class="col-md-3 col-sm-6 margin20">
+                    <div class="s-feature-box text-center wow animated fadeIn" data-wow-duration="700ms" data-wow-delay="300ms">
+                        <div class="mask-top">
+                            <!-- Icon -->
+                            <i class="fa fa-video-camera"></i>
+                            <!-- Title -->
+                            <h4>Video Recording</h4>
+                        </div>
+                        <div class="mask-bottom">
+                            <!-- Icon -->
+                            <i class="fa fa-video-camera"></i>
+                            <!-- Title -->
+                            <h4>Video Recording</h4>
+                            <!-- Text -->
+                            <p>If your students aren't already having enough fun looking at funny dog pictures, they'll love video recording themselves practicing words.  Think of it as an educational selfie!</p>
+                        </div>
+                    </div>
+                </div><!--services col-->
+                <div class="col-md-3 col-sm-6 margin20">
+                    <div class="s-feature-box text-center wow animated fadeIn" data-wow-duration="700ms" data-wow-delay="400ms">
+                        <div class="mask-top">
+                            <!-- Icon -->
+                            <i class="fa fa-paw"></i>
+                            <!-- Title -->
+                            <h4>Engaging Dog Pictures</h4>
+                        </div>
+                        <div class="mask-bottom">
+                            <!-- Icon -->
+                            <i class="fa fa-paw"></i>
+                            <!-- Title -->
+                            <h4>Engaging Dog Pictures</h4>
+                            <!-- Text -->
+                            <p>Jensie, a rescued black lab mix, is the real star of the Puppy Minimal Pairs App! Watch him wearing ties, typing, and striking many photogenic poses!</p>
+                        </div>
+                    </div>
+                </div><!--services col-->
+                <div class="col-md-3 col-sm-6 margin20">
+                    <div class="s-feature-box text-center wow animated fadeIn" data-wow-duration="700ms" data-wow-delay="500ms">
+                        <div class="mask-top">
+                            <!-- Icon -->
+                            <i class="fa fa-volume-up"></i>
+                            <!-- Title -->
+                            <h4>Learn by Hearing</h4>
+                        </div>
+                        <div class="mask-bottom">
+                            <!-- Icon -->
+                            <i class="fa fa-volume-up"></i>
+                            <!-- Title -->
+                            <h4>Learn by Hearing</h4>
+                            <!-- Text -->
+                            <p>Tap each word to hear it spoken. Have your student record themselves saying it, then play them back to back to hear the differences and track progress!</p>
+                        </div>
+                    </div>
+                </div><!--services col-->
+            </div>
+        </div><!--features-box container end-->
