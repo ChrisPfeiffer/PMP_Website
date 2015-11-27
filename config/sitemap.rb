@@ -3,9 +3,9 @@ SitemapGenerator::Sitemap.default_host = "http://puppyminpairs.heroku.com"
 
 SitemapGenerator::Sitemap.create do
 
-  add '/puppyminimalpairs/about'
-  add '/puppyminimalpairs/team'
-  add '/puppyminimalpairs/social'
+  add '/about'
+  add '/team'
+  add '/social'
   add '/pairs' 
 
 end

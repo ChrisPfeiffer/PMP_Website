@@ -1,17 +1,15 @@
 Rails.application.routes.draw do
   root 'puppy_minimal_pairs#home'
 
-  get 'puppy_minimal_pairs/about'
+  get '/about', to: 'puppy_minimal_pairs#about'
 
-  get 'puppy_minimal_pairs/examples'
+  get '/social', to: 'puppy_minimal_pairs#social'
 
-  get 'puppy_minimal_pairs/social'
+  get '/team', to: 'puppy_minimal_pairs#team'
 
-  get 'puppy_minimal_pairs/team'
+  get '/pairs', to: 'pairs#index'
 
-  get 'pairs/index'
-
-  get 'pairs/create'
+  get '/pairs/create', to: 'pairs#create'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
