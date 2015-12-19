@@ -4,8 +4,8 @@
 	 <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1">
-     <title><%=yield(:title)%> | Puppy Minimal Pairs Speech Therapy App</title>
-  <meta name="description" content=<%=yield(:description)%>>
+     <title><%=yield :title%> | Puppy Minimal Pairs Speech Therapy App</title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "test"%>">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -20,7 +20,7 @@
                     </div>
                     <div class="pull-right">
                         <ul class="list-inline top-social">
-                            <li>Get it on the App Store for iPads</li>
+                            <li>Speech Therapy App on the App Store for iPads</li>
                             <li><a href="http://apple.co/1Q50TA9" target="_blank"><i class="fa fa-apple"></i></a></li>
                             <li>Follow us:</li>
                             <li><a href="https://instagram.com/puppyminimalpairsspeechapp/" target="_blank"><i class="fa fa-instagram"></i></a></li>
